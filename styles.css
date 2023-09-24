@@ -1,0 +1,247 @@
+/* MAIN STYLE */
+    body {
+        font-family: 'DM Serif Display', serif;
+        background-color: #f8f8f8;
+        line-height: 1.6;
+        overflow-x: hidden; 
+    }
+
+/* NAVIGATION STYLE */
+    .navbar {
+        background-color: white; 
+        transition: background-color 0.3s ease-in-out; 
+        position: fixed;
+        width: 100%;
+        z-index: 1000; 
+    }
+
+    .navbar-brand {
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: bold; 
+        font-size: 1.5rem; 
+        color: #0094b9; 
+    }
+
+    .navbar-nav .nav-link {
+        font-family: 'Montserrat', sans-serif; 
+        font-weight: 600;
+        color: #333; 
+        transition: color 0.3s ease-in-out;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #001F3F; 
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+
+    nav ul li {
+        margin-left: 20px;
+        display: inline;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif; 
+        color: #333; 
+        font-weight: 600;
+        transition: color 0.3s ease-in-out;
+    }
+
+/* RESPONSIVENESS */
+    @media (max-width: 768px) {
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            display: block;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+            display: block;
+        }
+    }
+
+/* HOME SECTION */
+    #home {
+        background-image: url('images/bghome.png');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        overflow: hidden; 
+    }
+
+    #home .container {
+        text-align: center;
+    }
+
+    #home .container:hover h1 {
+        color: #0597b4; 
+    }
+
+    #home img {
+        width: 600px; 
+        height: auto; 
+        display: block;
+        margin: 0 auto;
+        margin-bottom: -150px;
+        transition: transform 0.3s ease-in-out; 
+    }
+
+    #home:hover img {
+        transform: scale(1.1); 
+    }
+
+    /* PARALLAX SCROLLING EFFECT */
+    #home::before {
+        content: "";
+        background: url('images/bghome.png') center/cover no-repeat fixed;
+        opacity: 0.7;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        transform: translateZ(-1px); 
+    }
+
+/* ABOUT SECTION */
+    #about {
+        background-image: url('images/bgabout.png');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; 
+        overflow: hidden; 
+    }
+
+    .about-title {
+        width: 1300px;
+        margin-left: -200px;
+        margin-top: -500px; 
+        margin-bottom: -500px;
+        transform: translateY(-30%) translateZ(0);
+        opacity: 0; 
+        transition: transform 0.50s ease-in-out, opacity 0.30s ease-in-out; 
+    }
+
+    #about:hover .about-title {
+        opacity: 2;
+        transform: translateY(0);
+        transition-delay: .10s; 
+    }
+
+/* MOODBOARD SECTION */
+    #moodboard {
+        background-image: url('images/mbbg.gif');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #moodboard .container {
+        text-align: center;
+    }
+
+    #moodboard h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        color: #0094b9;
+        margin-bottom: 40px;
+    }
+
+    /* Photo Grid Styles */
+    #moodboard .photo-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #moodboard .photo.third-width {
+        flex-basis: calc(33.33% - 20px);
+        margin: 10px;
+        padding: 0;
+    }
+
+    #moodboard .photo img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border: 0px solid #ffffff;
+        box-shadow: #001f3f46 5px 0px 10px 0px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #moodboard .photo img:hover {
+        transform: scale(1.2);
+    }
+
+/*CONTACT SECTION*/
+    #contact {
+        text-align: center;
+        padding: 40px;
+    }
+
+    .contact-icons {
+        margin-top: 30px;
+    }
+
+    .contact-icon {
+        font-size: 24px;
+        color: #333;
+        margin: 0 10px; 
+        text-decoration: none;
+    }
+
+    .contact-icon:hover {
+        color: #0094b9; 
+    }
+
+    #contact {
+        text-align: center;
+        padding: 50px 0; 
+        background-color: #f8f8f8; 
+    }
+
+    .contact-icons {
+        margin-top: 20px;
+    }
+
+    .contact-icon {
+        font-size: 24px;
+        color: #333; 
+        margin: 0 10px; 
+        text-decoration: none;
+        transition: color 0.3s ease-in-out; 
+    }
+
+    .contact-icon:hover {
+        color: #0094b9; 
+    }
+
+
+/* SMOOTH SCROLLING */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom class for parallax elements */
+.parallax {
+    transform: translateY(-50%) translateZ(0);
+}

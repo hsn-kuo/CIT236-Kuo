@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HK - Portfolio</title>
+    <!-- Link to Bootstrap CSS via CDN for navigation bar -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Font Awesome CSS for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Link to my custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <!-- NAVBAR CONTENT !-->
+            <div class="container">
+                <a class="navbar-brand" href="#">HK Portfolio</a>
+                <!-- RESPONSIVE NAVBAR HAMBURGER BUTTON -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About Myself</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#moodboard">Moodboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- HOME SECTION !-->
+    <section id="home">
+        <div class="container parallax">
+            <img src="images/hklogo.png" alt="Logo" width="200"> 
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION !-->
+    <section id="about">
+        <div class="container parallax">
+            <img src="images/abouttitle.png" alt="Name" class="about-title">
+        </div>
+    </section>
+
+    <!-- MOODBOARD SECTION !-->
+    <section id="moodboard">
+        <div class="container">            
+            <!-- Photo Grid !-->
+            <div class="photo-grid">
+                <!-- First Row of Photos -->
+                <div class="photo third-width">
+                    <img src="images/photo1.jpg" alt="Photo 1">
+                </div>
+                <div class="photo third-width">
+                    <img src="images/photo2.jpg" alt="Photo 2">
+                </div>
+                <div class="photo third-width">
+                    <img src="images/photo3.jpg" alt="Photo 3">
+                </div>
+    
+                <!-- Second Row of Photos -->
+                <div class="photo third-width">
+                    <img src="images/photo4.jpg" alt="Photo 4">
+                </div>
+                <div class="photo third-width">
+                    <img src="images/photo5.jpg" alt="Photo 5">
+                </div>
+                <div class="photo third-width">
+                    <img src="images/photo6.jpg" alt="Photo 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- CONTACT SECTION !-->
+    <section id="contact">
+        <h5>Contact Details</h5>
+        <div class="contact-icons">
+            <a href="https://www.facebook.com/kuo.hsienna/" class="contact-icon" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/hsnkuo/?hl=en" class="contact-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://plus.google.com/your-google-profile" class="contact-icon" aria-label="Google"><i class="fab fa-google"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <center><p>&copy; 2023 Hsien-na Kuo</p></center>
+    </footer>
+
+</body>
+</html>
+
